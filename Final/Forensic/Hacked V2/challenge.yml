@@ -1,0 +1,34 @@
+name: Hacked V2
+category: Forensic
+description: |-
+  Looks like I got hacked again lmao, please help me analyze this forensic artifact
+
+  > Always perform analysis of forensic artifacts in a sandboxed environment
+
+  Attachment: https://drive.google.com/file/d/1aZBCWouH6qbq06J4pzJf3ts4CCtx8wgX/view?usp=sharing
+  
+  SHA-256: FF8797593853E2590F5B6482BA7869689D573939C628DFB9AC50FAFA99B68548
+  Password: e946c138987dd89a9d29d139ef0eb4fc
+
+  Author: daffainfo
+
+connection_info: nc 52.77.234.0 32883
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{f48074f9d899ea1a18855e219e3fddaf}
+
+tags:
+  - hard
+
+state: hidden
+
+version: "0.1"

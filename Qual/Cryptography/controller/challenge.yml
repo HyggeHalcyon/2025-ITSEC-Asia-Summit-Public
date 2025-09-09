@@ -1,0 +1,33 @@
+name: "Controller"
+category: Cryptography
+description: |-
+  Some search, never finding a way
+  Before long, they waste away
+  I found you, something told me to stay
+
+  Flag Format: ITSEC{.*}
+
+  Author: Jakwan Bagung
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{wh3n_y0u_w1th_m3}
+
+tags:
+  - baby
+
+files:
+ - dist/chall.py
+ - dist/secret.py
+
+state: hidden
+
+version: "0.1"

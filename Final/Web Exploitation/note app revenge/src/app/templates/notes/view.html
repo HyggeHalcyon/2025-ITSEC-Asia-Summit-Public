@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}View Note - Notes App{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="flex-between">
+        <div>
+            <h2 id="note-title">{{ note.title }}</h2>
+            <div class="note-meta">
+                <p>Created: {{ note.created_at }} | Updated: {{ note.updated_at }}</p>
+            </div>
+        </div>
+        <div class="flex-actions">
+            <a href="{{ url_for('notes.dashboard') }}" class="btn">Back to Notes</a>
+        </div>
+    </div>
+
+    <div class="note-content" id="note-content">
+        <p>{{ note.content|safe }}</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/options.js') }}" nonce="{{ nonce }}"></script>
+<script nonce="{{ nonce }}">
+    if (options.custom_theme) {
+        const style = document.createElement('style');
+        style.textContent = document.getElementById('custom-theme-styles').textContent;
+        style.nonce = '{{ nonce }}';
+        document.head.appendChild(style);
+        localStorage.setItem('custom_theme', style.textContent);
+    }
+</script>
+{% endblock %}

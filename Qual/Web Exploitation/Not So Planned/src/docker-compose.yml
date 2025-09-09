@@ -1,0 +1,20 @@
+version: '3'
+services:
+  spawner:
+    build: spawner
+    environment:
+      - TITLE=Bot Spawner
+      - IMAGE_NAME=not_so_planned_bot
+      - PORT=5598
+      - TIMEOUT=60
+      - APP_SERVER=http://13.250.98.246:5599
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    init: true
+    ports:
+      - "5598:5598"
+  server:
+    build: backend
+    init: true
+    ports:
+      - "5599:5599"

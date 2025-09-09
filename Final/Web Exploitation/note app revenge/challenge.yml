@@ -1,0 +1,32 @@
+name: "note app revenge(?)"
+category: Web Exploitation
+description: |-
+  i hope this is more challengin for you, but i guess this is not that hard after all.
+
+  http://52.77.234.0:50002/
+  
+  author: kiseki
+  
+connection_info: 
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{oops_maybe_not_so_revenge_huwaaaaaaaaa....(T_T)}
+
+tags:
+  - hard
+
+files:
+ - dist/dist.zip
+
+state: hidden
+
+version: "0.1"

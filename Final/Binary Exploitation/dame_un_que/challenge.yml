@@ -1,0 +1,29 @@
+name: "dame un que"
+category: Binary Exploitation
+description: |-
+  Sorry it had to be windows again, but I read too much STARLABS writeups recently and I just can't help myself.
+
+  There's no connection, once you have managed to exploit it locally, feel free to open a ticket and send your exploit and the author will validate it manually.
+  
+  The challenge will be ran againts Windows 24H2, the same environment with the distributed VM attachment yesterday. It runs with Low Integrity Level and no Antivirus enabled, there's no flag, your objective is to escalate privilege to Administrator or NT/Authority System.
+
+  Author: HyggeHalcyon
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{Sorry_it_had_to_be_windows_again,_but_I_read_too_much_STARLABS_writeups_recently_honestly_kinda_felt_bad}
+
+files:
+ - dist/driver.zip
+
+state: hidden
+
+version: "0.1"

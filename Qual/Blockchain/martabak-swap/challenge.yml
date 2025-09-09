@@ -1,0 +1,41 @@
+name: "Martabak Nikmat Cylabus (Chovid99)"
+category: Blockchain
+description: |-
+  🥞 MARTABAK NIKMAT CYLABUS (Chovid99) 🥞
+  
+  Buka sejak 1999! Martabak paling enak di konoha!
+  Dijamin bikin nagih, rasa mantap, harga bersahabat!
+  
+  Menu spesial:
+  - Martabak Telur Extra Jumbo 
+  - Martabak Manis Special Keju Susu
+  - Martabak Mix Max Topping (BEST SELLER!)
+
+  Menu lengkap bisa dicek di TikTok @cylabus.id atau Instagram @cylabus
+  
+  Lagi mau buka cabang baru nih, invest yuk di cabang baru kita biar bisa dapet passive income!
+  *syarat dan ketentuan berlaku
+
+connection_info: nc {ip_chall} 50444
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{m4rt4b4k_n1kM4t_cylabus_chovid99_p3rLu_b4yar_f3e_k4lau_m4u_eXtR4_k3jUuuU}
+
+tags:
+  - hard
+
+files:
+ - dist/blockchain_martabak.zip
+
+state: hidden
+
+version: "0.1"

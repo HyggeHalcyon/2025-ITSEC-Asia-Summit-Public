@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3' 
+services:
+  python-server:
+    build: .  
+    ports:
+      - "14437:14437"  
+    container_name: itsec-hmi-verif
+    restart: always
+    environment:
+      - TERM=xterm

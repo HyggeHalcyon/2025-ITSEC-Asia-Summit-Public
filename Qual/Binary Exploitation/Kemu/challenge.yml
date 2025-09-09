@@ -1,0 +1,30 @@
+name: "Kemu"
+category: Binary Exploitation
+description: |-
+  Description blabla
+
+  author: EnRyu
+
+connection_info: nc 18.142.183.255 11101
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{fcbcbf60473c4598e9a10912ceb77a22}
+
+tags:
+  - easy
+
+files:
+ - dist/chall.tar.gz
+
+state: hidden
+
+version: "0.1"

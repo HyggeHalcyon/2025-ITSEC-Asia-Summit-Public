@@ -1,0 +1,27 @@
+name: nvm-easy
+category: Reverse Engineering
+description: |-
+  nvm its easy
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{this_one_belong_in_stego_category}
+
+tags:
+  - medium
+
+files:
+ - dist/nvm.exe
+ - dist/easy.vm.bin
+
+state: hidden
+
+version: "0.1"

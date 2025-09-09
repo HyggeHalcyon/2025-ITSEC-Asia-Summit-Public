@@ -1,0 +1,17 @@
+[
+    {
+        "target": "Plan List",
+        "path": "/plan-list",
+        "icon": "icons/list.png"
+    },
+    {
+        "target": "Create Plan",
+        "path": "/create-plan",
+        "icon": "icons/add.png"
+    },
+    {
+        "target": "Find Plan",
+        "path": "/search-plan",
+        "icon": "icons/search.png"
+    }
+]

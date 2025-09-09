@@ -1,0 +1,29 @@
+name: "Shanghai"
+category: Blockchain
+description: |-
+  忐忑著地等待你來
+  流光把人拋
+
+connection_info: nc 54.254.152.24 31337
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{i_thought_once_a_smart_contract_is_deployed_it_cannot_be_changed}
+
+tags:
+  - easy
+
+files:
+ - dist/shanghai.zip
+
+state: hidden
+
+version: "0.1"

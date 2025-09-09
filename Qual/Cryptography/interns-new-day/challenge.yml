@@ -1,0 +1,35 @@
+name: "Intern's New Day"
+category: Cryptography
+description: |-
+  Boss: "Can you create an basic encryption for our backend"
+  Intern: "Sure Boss, let me work on it"
+
+  *When alone*
+  Intern: "Surely a couple of sip of wine does not hurt anyone"
+
+  Flag Format: ITSEC{.*}
+
+  Author: EternalBeats
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{I'm_Seriously_Sorry_For_This}
+
+tags:
+  - easy
+
+files:
+ - dist/chall.py
+ - dist/secret.py
+
+state: hidden
+
+version: "0.1"

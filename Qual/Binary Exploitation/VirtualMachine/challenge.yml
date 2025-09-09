@@ -1,0 +1,29 @@
+name: "VirtualMachine"
+category: "Binary Exploitation"
+description: |-
+  Hi! I'm an undergraduate student who never took the OS and Computer Organization course. However I'm very interested in building my own machine. Can you check the security of my custom (very scuffed) virtual machine that is made specifically for (maybe) secure dynamic allocations?
+  Deployed on Windows OS Version 10.0.26100 N/A Build 26100
+
+connection_info: ncat.exe 18.138.240.200 9001
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{sorry_the_description_was_legit_and_it_is_coded_with_a_lot_of_skill_issue_on_my_side_WAS_LINZ_HEREEEE??}
+
+tags:
+  - hard
+
+files:
+ - dist/VirtualMachine.zip
+
+state: hidden
+
+version: "0.1"

@@ -1,0 +1,27 @@
+name: nvm-hard
+category: Reverse Engineering
+description: |-
+  nvm its hard
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{self_modifying_vm_bytecode_in_dot_net_aot}
+
+tags:
+  - hard
+
+files:
+ - dist/nvm.exe
+ - dist/hard.vm.bin
+
+state: hidden
+
+version: "0.1"

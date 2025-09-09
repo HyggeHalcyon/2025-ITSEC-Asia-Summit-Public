@@ -1,0 +1,37 @@
+name: Operation - Baby Steps
+category: Forensic
+description: |-
+  On August 1st, 2025, a security incident occurred affecting one of the company’s internal environments. The Incident Response (IR) team conducted an initial assessment and acquired several critical artifacts from the impacted systems.
+
+  The company does not currently employ a Security Operations Center (SOC), so no monitoring alerts or centralized logs were available. However, an internal support ticket was submitted by a member of the development team, reporting unusual behavior on their Windows desktop, the system had become extremely slow, and several important files were no longer accessible due to encryption.
+
+  As part of the Digital Forensics team, you have been assigned to investigate the incident using the artifacts collected by the IR team.
+
+  > Conduct all forensic artifact analysis in a tightly controlled sandboxed environment to isolate potential threats, preserve system integrity, and ensure reliable results.
+
+  Attachment: https://drive.google.com/drive/folders/1yNxdd6T9ZmhWZAs91F4rBmCCjjet7bXj?usp=drive_link
+  SHA-256: 40F4829CCB2A97DA712B18AED11080B9C194842FB04FE4D4447A9F6FC8E12B58
+  Pass: u2cgQ6Q3dV&&$udD52QcYM2ZT5tJFvGvk===$$#%
+
+  Author: Brandy & Rizal
+
+connection_info: nc 13.250.98.246 34850
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{F010358092E6E224BDFE35BAF0E23C0D7E20976B80C813D85DEAE4FEB19795F8}
+
+tags:
+  - medium
+
+state: hidden
+
+version: "0.1"

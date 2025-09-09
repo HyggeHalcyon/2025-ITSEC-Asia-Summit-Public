@@ -1,0 +1,6 @@
+services:
+  for-hacked-v2:
+    build: .
+    restart: always
+    ports:
+      - "32883:32883"

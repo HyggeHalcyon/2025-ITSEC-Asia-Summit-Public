@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Notes App{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" nonce="{{ nonce }}">
+</head>
+<body>
+    <header>
+        <script nonce="{{ nonce }}">
+            window.onsecuritypolicyviolation = (e) => {
+                alert("A security policy violation occurred");
+                location.replace("/");
+            };
+        </script>
+        <div class="container">
+            <nav>
+                <h1>📝 Notes App</h1>
+                {% if session.user_id %}
+                <ul>
+                    <li><a href="{{ url_for('notes.dashboard') }}">My Notes</a></li>
+                    <li><a href="{{ url_for('notes.create_note') }}">Create Note</a></li>
+                    <li><a href="{{ url_for('auth.logout') }}">Logout ({{ session.username }})</a></li>
+                </ul>
+                {% endif %}
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+        <!-- Page-specific scripts -->
+        {% block scripts %}{% endblock %}
+        <script nonce="{{ nonce }}">
+            const style = document.createElement('style');
+            style.textContent = localStorage.getItem('custom_theme') || "";
+            style.nonce = '{{ nonce }}';
+            document.head.appendChild(style);
+        </script>
+    </div>
+</body>
+</html>

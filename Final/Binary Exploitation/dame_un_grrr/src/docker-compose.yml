@@ -1,0 +1,17 @@
+name: dame_un_grrr
+services:
+  challenge:
+    build: .
+    container_name: dame_un_grrr
+    image: image_dame_un_grrr
+    restart: always
+    ulimits:
+      nproc: 65535
+      core: 0
+    ports:
+      - "11100:11101"
+    entrypoint: /etc/init.sh
+    cpus: 2
+    mem_limit: 2G
+    init: true
+    

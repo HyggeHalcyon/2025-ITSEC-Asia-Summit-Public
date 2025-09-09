@@ -1,0 +1,26 @@
+name: "Minesweeper"
+category: Reverse Engineering
+description: |-
+  Minesweeper
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{P3mbEr51H_R4nJ4U_HanD4L}
+
+tags:
+  - medium
+
+files:
+ - dist/Minesweeper.exe
+
+state: hidden
+
+version: "0.1"

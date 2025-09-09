@@ -1,0 +1,37 @@
+name: "Venture Into the Dungeon"
+category: Cryptography
+description: |-
+  The dungeon's entrance groans open as the party pushes aside the moss-covered stone door. A breath of stale, cool air rushes out, carrying with it the scent of forgotten battles and dust. The flicker of your torches catches faint carvings on the walls-warnings in an old tongue about "the toll of secrets" and "the weight of sloth."
+
+  Slumped against the wall is a man in tattered leather armor, a rusty sword leaning beside him. His hair is a tangled mess, his eyes half-closed, and his breathing slow, almost exaggerated. When you approach, he doesn't greet you, he just mutters something that sounds like,
+  "**...wake me up when the dungeon's cleared...**", it seems that only a certain command will wake this man up.
+
+  Opposite him stands a hunched figure draped in robes the color of ash, a hood obscuring their face. The only thing visible is a pale grin beneath the shadows. When you greet them, their voice rasps out,
+  "Information... yes, I have much. But words are weighty things, adventurers. **Payment must match the value.**"
+
+  Both figures clearly hold pieces of the puzzle. The lazy man might prove to be a powerful ally once roused, and the secret-keeper might reveal crucial truths about the dungeon's traps and treasures, but neither will cooperate easily.
+
+Author: EternalBeats
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{Secrets_don't_stay_buried_forever}
+
+tags:
+  - medium
+
+files:
+  - dist/chall.py
+  - dist/secrets.py
+
+state: hidden
+
+version: "0.1"

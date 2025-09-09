@@ -1,0 +1,30 @@
+name: "Rabbit Hole"
+category: Cloud
+description: |-
+  My friend is obsessed with JoJo's Bizarre Adventure, so he built a themed website and asked me to deploy it.  Problem is... I kinda used my dad's AWS account without telling him 😅.
+
+  Can you take a look around <a href="http://18.138.234.126:3000/">the website</a> and see if there's anything sensitive exposed?
+
+  Flag Format: ITSEC{.*}
+
+  Author: kangwijen & Djumanto
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{bd8f95175722b36d0068fa36600a552a}
+
+tags:
+  - hard
+  - web
+
+state: hidden
+
+version: "0.1"

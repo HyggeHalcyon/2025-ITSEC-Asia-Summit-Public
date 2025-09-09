@@ -1,0 +1,29 @@
+name: Night Shift
+category: Forensic
+description: |-
+  In the quiet hours of the night shift, someone slipped past the digital gates of our HMI system.
+  We need your eyes, your instincts.
+  Dig through the traces, read between the lines, and uncover the intruder''s path.
+
+  Author: BlackBear
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+files:
+  - dist/log.json
+flags:
+  - ITSEC{l0g_1s_1mp0rt4nt_7753a4b5}
+
+tags:
+  - baby
+
+state: hidden
+
+version: "0.1"

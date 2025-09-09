@@ -1,0 +1,34 @@
+name: "Buffer Overflow"
+category: Binary Exploitation
+description: |-
+  Description blabla
+
+  author: {Name Author}
+
+  <a href="http://:123123/">http://:123123/</a>
+
+connection_info: nc 52.77.234.0 123123
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{.*}
+
+tags:
+  - easy
+  - medium
+  - hard
+
+files:
+  - dist/chall.zip
+
+state: hidden
+
+version: "0.1"

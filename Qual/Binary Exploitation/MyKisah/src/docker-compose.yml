@@ -1,0 +1,10 @@
+services:
+  mykisah:
+    container_name: mykisah
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 40003:1337
+    restart:
+      always

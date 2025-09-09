@@ -1,0 +1,29 @@
+name: "cumulus"
+category: Cloud
+description: |-
+  CloudTech is a new startup that just launched its company landing page to attract investors and showcase its vision. The site is simple and static, hosted entirely on AWS. With a tight deadline, the team rushed the deployment and may have overlooked some security best practices. Your task is to investigate the website and check if there are any misconfigurations or vulnerabilities. 
+
+  <a href="https://d16nohi04dvwd6.cloudfront.net">CloudTech Landing Page</a>
+
+  Flag Format: ITSEC{.*}
+
+  Author: kangwijen
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{d39c27906533a0d44e052520f3e47790}
+
+tags:
+  - baby
+
+state: hidden
+
+version: "0.1"

@@ -1,0 +1,30 @@
+name: "Simple RSA"
+category: Cryptography
+description: |-
+  Most teams skip crypto chals if they look complicated or just blindly dump them into ChatGPT.
+  That’s why I made this super simple RSA chal with just 1 text file!
+  Now there’s no more reason to skip crypto or ask ChatGPT for help :)
+
+  author: BerlianGabriel
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{tH4Ts_WhY_M4th_iS_Be4UTiFuL_&_iMPoRt4nt!!!}
+
+tags:
+  - hard
+
+files:
+ - dist/simple-rsa.txt
+
+state: hidden
+
+version: "0.1"

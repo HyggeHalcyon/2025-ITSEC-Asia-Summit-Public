@@ -1,0 +1,29 @@
+name: "Inter Planetary Wealth Distribution System"
+category: Blockchain
+description: |-
+  Let's see what grandpa left us with!
+  His Wealth?
+
+connection_info: nc {ip_chall} 50103
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{pairing_payable_with_unwatched_delegatecall_is_a_bad_idea_tbh}
+
+tags:
+  - medium
+
+files:
+ - dist/blockchain_ipwd.zip
+
+state: hidden
+
+version: "0.1"

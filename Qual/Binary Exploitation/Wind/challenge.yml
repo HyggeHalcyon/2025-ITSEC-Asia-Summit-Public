@@ -1,0 +1,36 @@
+name: "Wind"
+category: Binary Exploitation
+description: |-
+  Description blabla
+
+  To access the challenge server, you must submit a support ticket requesting the author to bring the machine online. Once the instance is activated, it will be available for a strict duration of 5 minutes.
+
+  Before activation, the requester must provide a screenshot demonstrating that the exploit was able to get shell access.
+
+  Please note:
+  The challenge instance will shut down at 21:00 PM. No further access will be granted beyond this time.
+  Be sure to use the available window to take any necessary screenshots promptly for making the writeup.
+
+  author: Enryu
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{c5dd0f0c544c40370298c349b47ce485}
+
+tags:
+  - medium
+
+files:
+ - dist/chall.tar.gz
+
+state: hidden
+
+version: "0.1"

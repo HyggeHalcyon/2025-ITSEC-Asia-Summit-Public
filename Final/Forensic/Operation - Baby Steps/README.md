@@ -1,0 +1,16 @@
+## Questions & Answers | Operation - Baby Steps
+
+1. What is the name of the malicious UDF library file uploaded by the Threat Actor, which is used for executing system commands? (`libmysql_execstr.dll`)
+2. What is the evidence from the registry or system configuration that RDP was enabled by the user for persistence? (`HKLM\SYSTEM\ControlSet001\Control\Terminal Server\fDenyTSConnections=0`)
+3. What is the name of the Windows privilege that was exploited for privilege escalation to SYSTEM? (`SeImpersonatePrivilege`)
+4. What is the original timestamp of a webshell file’s CreationTime that was modified by an attacker, rather than the timestomped value, given that the recorded creation time is after the timestomping process? (UTC+07:00) (`2025-08-01 15:57:33`)
+5. What anti-forensic technique was used to hide the original timestamp of the file activity? (`Timestomping`)
+6. What is the destination address of the command & control (C2) server embedded in the backdoor sl.exe and used for outbound communication? (`103.167.137.91:4455`)
+7. What is the email identity found and associated with the threat actor during the exfiltration process? (`rizal.testing1@gmail.com`)
+8. Upon examining the C2 malware binary, it appears that the binary failed to establish a connection. What was the Discord bot username the malware attempted to contact during execution, and what is its bot API key? (`Sigvarr:MTM2MzQ0MDcxNDUxNTc0MjgwMQ.GVE2rR.-K9fcEdUThjTSNJS-Zn3WwgoDhjL5NaLHRS6Rk`)
+9. What is the name of the command callback function used to establish persistence? (`SIGVAR`)
+10. What is the text channel ID used by the threat actor to communicate with the bot and receive output? (`548372455996129282`)
+11. What was the first CWE exploited by the Threat Actor in the binary named Higan, and what is 2 CWEs exploited related to Heap Memory in the binary named Procland? (`CWE-125,CWE-416,CWE-415`)
+12. What is the full initial instruction from gadgets used by Threat Actor to allow puts@got passed as the first argument used in exploit scripts for Higan binary? (`xchg r12, rdi; pop rbp; nop; pop rdx; xor rax, rax; ret;`)
+13. What is the 32-bit local variable value does the attacker overwrite to bypass security checks for Higan binary? (`0xde4db33f`)
+14. It is known that the threat actor clobbered the tcache entry structure in the procland binary. What is the tampered pointer? (`tcache_key`)

@@ -1,0 +1,31 @@
+name: BabyV8
+category: Reverse Engineering
+description: |-
+  I feel like V8 is not always that hard if there's something for you to play with due to my silly mistake disclosing something too much.
+  You can solve this easily or in hardcore mode. It's your call~
+
+  If you think you got it correctly but you got no flag, perhaps you need either to type it manually instead of "copy-pasting" it :)
+
+  Author: aseng
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{all_th0se_v4rs_in_v8_sn4psh0t_and_forg3T5_t0_d1s4ble_F12}
+
+tags:
+  - easy
+
+files:
+ - dist/dist.zip
+
+state: hidden
+
+version: "0.1"

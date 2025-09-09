@@ -1,0 +1,30 @@
+name: Damn, I Love PHP!
+category: Web Exploitation
+description: |-
+  It is believed that if you use PHP, you will get a yellow lambo 🤑🤑
+
+  Author: daffainfo
+
+connection_info: http://52.77.234.0:50001/
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{ab6a4967473a7720a70523f5fa0a24db}
+
+tags:
+  - medium
+
+files:
+ - dist/dist-damn-i-love-php.zip
+
+state: hidden
+
+version: "0.1"

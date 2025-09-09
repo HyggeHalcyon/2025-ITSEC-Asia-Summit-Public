@@ -1,0 +1,33 @@
+name: HMICast
+category: Forensic
+description: |-
+  Several important data has been acquired from an employee's device as an evidence. Dig into the evidence to expose the stealthy actions that went unnoticed.
+
+  Attachment: https://drive.google.com/file/d/1w22r2EQCgCOQmM-GhsdvT5jc1tfHePZ4/view?usp=sharing
+
+  Password: vJcCvAN7TZIJn9dQ
+
+  Notes: This challenge contains real malicious process. Please execute on a safe and controlled environment. We are not responsible for any damages or losses resulting from the use or misuse of this challenge.
+
+  Author: BlackBear
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+connection_info: nc 13.250.98.246 14437
+
+flags:
+  - ITSEC{gunt3rs_is_th3_culpr1t_88ebf35eac}
+
+tags:
+  - hard
+
+state: hidden
+
+version: "0.1"

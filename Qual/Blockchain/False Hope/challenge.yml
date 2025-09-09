@@ -1,0 +1,29 @@
+name: "Hope"
+category: Blockchain
+description: |-
+  Notice that "Hope" is a luxury?
+  Some already have it, some... can FORCE it.
+
+connection_info: nc {ip_chall} 51002
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{N0w_1_c4N_tak30v3r_th3_c0ntr0l}
+
+tags:
+  - baby
+
+files:
+ - dist/blockchain_false_hope.zip
+
+state: hidden
+
+version: "0.1"

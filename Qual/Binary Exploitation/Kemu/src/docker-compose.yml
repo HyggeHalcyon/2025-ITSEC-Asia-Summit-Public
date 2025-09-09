@@ -1,0 +1,15 @@
+name: kemu
+services:
+  challenge:
+    build: .
+    container_name: kemu
+    image: image_kemu
+    restart: always
+    ulimits:
+      nproc: 65535
+      core: 0
+    ports:
+      - "11101:11101"
+    entrypoint: /etc/init.sh
+    init: true
+    

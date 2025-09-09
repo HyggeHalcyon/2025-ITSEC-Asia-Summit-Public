@@ -1,0 +1,6 @@
+services:
+  for-operation-baby-steps:
+    build: .
+    restart: always
+    ports:
+      - "34850:34850"

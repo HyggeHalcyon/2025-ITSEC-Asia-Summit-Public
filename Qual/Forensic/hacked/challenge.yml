@@ -1,0 +1,33 @@
+name: Hacked
+category: Forensic
+description: |-
+  Bruh, I just got hacked. Please help me analyze this artifact and answer all the questions given
+
+  > Always perform analysis of forensic artifacts in a sandboxed environment
+
+  Attachment: https://drive.google.com/file/d/1q0QD6QxWfa7yCFt2oCM9AutwlHlY6J7g/view?usp=drive_link
+
+  Pass: 188696d2813d3f1e31d08f91a64b1f86
+
+  Author: daffainfo
+
+connection_info: nc 13.250.98.246 34843
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{b403ab3f9050c1de4485cbbb747bfc14}
+
+tags:
+  - medium
+
+state: hidden
+
+version: "0.1"

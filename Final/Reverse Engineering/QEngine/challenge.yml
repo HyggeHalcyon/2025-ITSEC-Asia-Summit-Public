@@ -1,0 +1,28 @@
+name: "QEngine"
+category: Reverse Engineering
+description: |-
+  :) or :( ?
+  
+  Author: aseng
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{th!s_1s_4n_0pt1m!z33d_v8r5i0n}
+
+tags:
+  - medium
+
+files:
+  - dist/dist.zip
+
+state: hidden
+
+version: "0.1"

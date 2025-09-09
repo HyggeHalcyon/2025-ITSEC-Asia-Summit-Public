@@ -1,0 +1,15 @@
+version: '3'
+services:
+  ventureintothedungeon:
+    build:
+      context: .
+    working_dir: /home/usero
+    container_name: ventureintothedungeon
+    restart: always
+    ports:
+      - "20256:20256"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+      - 1.1.1.1
+      - 1.0.0.1

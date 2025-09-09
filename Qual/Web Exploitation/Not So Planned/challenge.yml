@@ -1,0 +1,33 @@
+name: "Not So Planned"
+category: Web Exploitation
+description: |-
+  I'm planning to get married at 25 years old,
+  so I make this app which help me remeber things,
+  also caching is cool, so i will always remember the first step.
+
+  spawner: http://13.250.98.246:5598
+  backend: http://13.250.98.246:5599
+
+  author: DJumanto
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{9160d783d3025c25164f106d1abe9372}
+
+tags:
+  - medium
+
+files:
+ - dist/chall.zip
+
+state: hidden
+
+version: "0.1"

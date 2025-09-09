@@ -1,0 +1,32 @@
+name: "Intro to Kubernetes Security"
+category: Cloud
+description: |-
+
+  cluster-name: exciting-electro-ant
+  region: ap-southeast-1
+  pod-name: player-pod
+  Namespace: <make a ticket to get your private namespace>  
+
+  Flag Format: ITSEC{.*}
+
+  Author: Synchx & kangwijen
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{y0u_4r3_ku8e_g04t!_2ce502dd2f60e093c212d64c3ce154db}
+
+tags:
+  - medium
+  - kubernetes
+
+state: hidden
+
+version: "0.1"

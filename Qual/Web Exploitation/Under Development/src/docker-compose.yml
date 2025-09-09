@@ -1,0 +1,53 @@
+version: '3'
+
+services:
+  bot:
+    restart: always
+    container_name: bot
+    environment:
+      - SECRET_KEY=a0f8b263d6b84f15f14d4ad0fc1e29c8b73097b3d61c9d78f3c3a5e8d4a8f6f9
+      - PORT=5579
+      - APP_URL=http://under-development-web:5578
+    depends_on:
+      - under-development-web
+      - challdb
+    build:
+      context: bot
+    ports:
+      - "5579:5579"
+    networks:
+      - internal-network
+
+  challdb:
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=SECRET_PASSWORD_I_LOVE_YOU
+      - MYSQL_HOST=challdb
+      - MYSQL_USER=whistleblower_user
+      - MYSQL_PASSWORD=G3d4g3d1g3d4g3da0
+      - MYSQL_DATABASE=whistleblower_db
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - backend-network
+
+  under-development-web:
+    build: 
+      context: app
+    depends_on:
+      - challdb
+    ports:
+      - "5578:5578"
+    networks:
+      - internal-network
+      - backend-network
+
+volumes:
+  db_data:
+networks:
+  internal-network:
+  backend-network:

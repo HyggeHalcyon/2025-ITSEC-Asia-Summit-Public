@@ -1,0 +1,30 @@
+name: "Monkey Prox"
+category: Cloud
+description: |-
+  Mid but you know where to start. 
+
+  18.140.248.136
+  <a href="http://18.140.248.136:5000">18.140.248.136:5000</a>
+
+  Flag Format: ITSEC{.*}
+
+  Author: Synchx
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{8934c4d9494042acaed7f09f59265313}
+
+tags:
+  - medium
+
+state: hidden
+
+version: "0.1"

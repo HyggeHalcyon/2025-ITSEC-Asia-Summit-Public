@@ -1,0 +1,31 @@
+name: "Chovid99 Prize"
+category: Blockchain
+description: |-
+
+  Hadiah untuk kamu yang sudah setia belajar blockchain.
+  
+  Jangan lupa follow IG @cylabus dan TikTok @cylabus.id
+
+Author: Chovid99
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{h4di4h_y4ng_h4ngat_leb1h_n1km4t_d4rI_y4ng_d1ngIn_Chovid99}
+
+tags:
+  - hard
+
+files:
+  - dist/blockchain_chovid99_prize.zip
+
+state: hidden
+
+version: "0.1"

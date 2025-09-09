@@ -1,0 +1,1 @@
+FLAG = b"ITSEC{Secrets_don't_stay_buried_forever}"

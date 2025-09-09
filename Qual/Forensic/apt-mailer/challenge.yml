@@ -1,0 +1,30 @@
+name: APT Mailer
+category: Forensic
+description: |-
+  One quiet morning, a message slipped through unnoticed.
+  No alerts. No noise. Just another routine communication.
+
+  They blend in.
+
+  Author: BlackBear
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+files:
+  - dist/evidence-log.pcapng
+flags:
+  - ITSEC{R3g1stry_P3rs1st3nc3_FTW!!}
+
+tags:
+  - easy
+
+state: hidden
+
+version: "0.1"

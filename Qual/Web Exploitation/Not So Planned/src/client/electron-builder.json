@@ -1,0 +1,22 @@
+{
+    "appId": "com.djumanto.electronbase",
+    "files": ["dist-react", "dist-electron"],
+    "extraResources":["dist-electron/preload.cjs"],
+    "directories": {
+    "output": "release/${version}"
+    },
+    "asar":true,
+    "icon":"app",
+    "directories": {
+    "output": "release/${version}"
+    },
+    "mac": {
+        "target": "dmg"
+    },
+    "linux": {
+        "artifactName": "${productName}_${version}.${ext}"
+    },
+    "win": {
+        "target": ["portable", "msi"]
+    }
+}

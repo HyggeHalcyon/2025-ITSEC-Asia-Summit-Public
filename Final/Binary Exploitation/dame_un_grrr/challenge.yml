@@ -1,0 +1,33 @@
+name: "dame un grrr"
+category: Binary Exploitation
+description: |-
+  Dame un grrr (¿un qué?)
+  Un grrr (¿un qué, un qué?)
+  Un grrr (¿un qué?)
+  Un grrr
+
+  author: Enryu
+
+connection_info: nc 52.77.234.0 11101
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{4652e94e001f0d2c9c5caaf9f617a146}
+
+tags:
+  - medium
+
+files:
+  - dist/chall.tar.gz
+
+state: hidden
+
+version: "0.1"

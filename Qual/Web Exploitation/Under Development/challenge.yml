@@ -1,0 +1,35 @@
+name: "Under Development"
+category: Web Exploitation
+description: |-
+  My Boss decided to make a new website for our store since we keep getting hate reviews from past website
+  i don't know why he decided to do that
+
+  Note: HIDDEN_INFO will always been an 8 digit numbers
+
+  author: DJumanto
+
+
+  <a href="http://13.250.98.246:5578/">bot</a>
+  <a href="http://13.250.98.246:5579/">Remote Service</a>
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{l34k1ng_thr0ugh_3v3ryth1ng}
+
+tags:
+  - easy
+
+files:
+ - dist/chall.zip
+
+state: hidden
+
+version: "0.1"

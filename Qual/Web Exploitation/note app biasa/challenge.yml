@@ -1,0 +1,31 @@
+name: "note app biasa"
+category: Web Exploitation
+description: |-
+  gak capek apa ctfan terus?
+
+  author: kiseki
+  
+
+connection_info: 
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{that_was_supposed_to_be_the_hard_challenge??.-.}
+
+tags:
+  - hard
+
+files:
+ - dist/dist.zip
+
+state: hidden
+
+version: "0.1"

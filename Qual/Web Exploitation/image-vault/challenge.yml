@@ -1,0 +1,31 @@
+name: Image Vault
+category: Web Exploitation
+description: |-
+  We've launched a new Image Vault service, but it's invite-only for now. I hope this helps keep your images safe from hackers.
+
+  author: abejads
+  
+  <a href="https://13.250.98.246:1337/">https://13.250.98.246:1337/</a>
+
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 30
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{ch41n1n9_th3_vuln_t0g3th3rr}
+
+tags:
+  - medium
+
+files:
+ - dist/chall.zip
+
+state: hidden
+
+version: "0.1"

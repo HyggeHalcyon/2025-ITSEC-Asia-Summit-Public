@@ -1,0 +1,28 @@
+name: "Kepiting Cirebon"
+category: Reverse Engineering
+description: |-
+  Doksli kepiting cirebon
+
+  author: AnYujin
+
+##### DON'T CHANGE
+value: 1000
+type: dynamic
+extra:
+    initial: 1000
+    decay: 8
+    minimum: 100
+##### DON'T CHANGE
+
+flags:
+  - ITSEC{K3p1Tin9_45l1_C1r3Bon_C1k}
+
+tags:
+  - medium
+
+files:
+  - src/kepitingcirebon.apk
+
+state: hidden
+
+version: "0.1"

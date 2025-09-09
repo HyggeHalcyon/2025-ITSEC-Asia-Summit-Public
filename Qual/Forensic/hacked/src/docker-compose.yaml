@@ -1,0 +1,6 @@
+services:
+  for-hacked:
+    build: .
+    restart: always
+    ports:
+      - "34843:34843"
